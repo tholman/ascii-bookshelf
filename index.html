@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASCII Bookshelf Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="controls">
+      <h1>ASCII Bookshelf Creator</h1>
+      <p class="subtitle">by <a href="https://github.com/tholman">tholman</a></p>
+
+      <section class="options-section">
+        <h2>Shelf</h2>
+        <div class="option-row">
+          <label for="booksPerShelf">Books per shelf</label>
+          <input type="number" id="booksPerShelf" value="8" min="1" max="20">
+        </div>
+        <div class="option-row checkbox-row">
+          <label><input type="checkbox" id="shelfWalls"> Shelf walls</label>
+        </div>
+      </section>
+
+      <section class="options-section books-section">
+        <div class="section-header">
+          <h2>Books</h2>
+          <button id="addBook" class="btn btn-add">+ Add Book</button>
+        </div>
+        <div id="bookList"></div>
+      </section>
+    </div>
+
+    <div class="preview">
+      <div class="preview-header">
+        <h2>Preview</h2>
+        <div class="preview-actions">
+          <button id="copyHtml" class="btn btn-copy">Copy HTML</button>
+        </div>
+      </div>
+      <div class="preview-container">
+        <pre id="output"></pre>
+      </div>
+      <details class="raw-output">
+        <summary>Raw HTML source</summary>
+        <textarea id="rawOutput" readonly rows="10"></textarea>
+      </details>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
