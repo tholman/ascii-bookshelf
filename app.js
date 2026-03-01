@@ -359,13 +359,13 @@ function renderBookList() {
       </div>
       <div class="book-fields">
         <div class="book-field-row">
-          <div class="book-field field-grow">
+          <div class="book-field">
             <label>Title</label>
             <input type="text" data-index="${idx}" data-field="title" value="${escapeAttr(book.title)}">
           </div>
         </div>
         <div class="book-field-row">
-          <div class="book-field field-grow">
+          <div class="book-field">
             <label>URL</label>
             <input type="text" data-index="${idx}" data-field="url" value="${escapeAttr(book.url)}" placeholder="https://...">
           </div>
@@ -385,11 +385,11 @@ function renderBookList() {
           </div>
         </div>
         <div class="book-field-row">
-          <div class="book-field field-grow">
+          <div class="book-field">
             <label>Fill</label>
             <select data-index="${idx}" data-field="style">${styleOpts}</select>
           </div>
-          <div class="book-field field-grow">
+          <div class="book-field">
             <label>Border</label>
             <select data-index="${idx}" data-field="border">${borderOpts}</select>
           </div>
